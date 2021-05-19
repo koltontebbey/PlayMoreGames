@@ -1,2 +1,2 @@
 # PlayMoreGames
-The best games
+Bad games, worse developers.
