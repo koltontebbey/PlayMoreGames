@@ -49,19 +49,25 @@ app.post('/addUserHandler', function (req, res) {
      
       // First read existing users.
       fs.readFile( __dirname + "/" + "users.json", 'utf8', function (err, data) {
-         let users = [];
          users = JSON.parse(data);
-         
-         console.log(users);
-         input = JSON.stringify(req.body);
-         console.log(input);
-         users.push(input);
-         //console.log(users);
-         //console.log( data );
-         //Let's append this to the data
-         let newData = JSON.stringify(users);
-         fs.writeFile("./users.json", newData, function(err) { if (err) throw err; })
-         res.end(console.log(data));
+
+         users["users"].push({
+             fname: req.body.fname, 
+             lname: req.body.lname, 
+             username: req.body.username, 
+             password: req.body.password}); 
+
+         input = JSON.stringify(users);
+         // console.log(users);
+         // input = JSON.stringify(req.body);
+         // console.log(input);
+         // users.push(input);
+         // //console.log(users);
+         // //console.log( data );
+         // //Let's append this to the data
+         // let newData = JSON.stringify(users);
+         fs.writeFile("./users.json", input, function(err) { if (err) throw err; })
+          res.end(console.log(data));
       });
    } catch (e) { console.log(e);}
  })
