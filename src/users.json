@@ -1,52 +1,39 @@
 {
    "users": [
       {
-         "user1": {
-            "fname": "Omkar",
-            "lname": "Tamhankar",
-            "username": "drdoom",
-            "password": "doomkar",
-            "id": 1
-         },
-         "user2": {
-            "fname": "Kolton",
-            "lname": "Tebbey",
-            "username": "scrumdaddy",
-            "password": "scrumlicious",
-            "id": 2
-         },
-         "user3": {
-            "fname": "Matt",
-            "lname": "Smith",
-            "username": "sapgod",
-            "password": "eyboner",
-            "id": 3
-         },
-         "user4": {
-            "fname": "Dan",
-            "lname": "van Drunen",
-            "username": "bipsbabe",
-            "password": "hope",
-            "id": 4
-         }
-      },
-      {
+         "id": 1,
          "fname": "a",
          "lname": "b",
          "username": "ab",
          "password": "a"
       },
       {
+         "id": 2,
          "fname": "big",
          "lname": "brain",
          "username": "jefftebb",
          "password": "msis"
       },
       {
+         "id": 3,
          "fname": "jeff",
          "lname": "lim",
          "username": "biggestbrain",
          "password": "screwdan"
+      },
+      {
+         "id": 4,
+         "fname": "smooth",
+         "lname": "brain",
+         "username": "tebbjeff",
+         "password": "muckfsis"
+      },
+      {
+         "id": 5,
+         "fname": "bipin",
+         "lname": "prabhakar",
+         "username": "bprabaha",
+         "password": "heyHillolCumOver"
       }
    ]
 }
